@@ -1,0 +1,197 @@
+.background {
+  background-image: url("../img/22.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  /* min-height: 100vh; */
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  /* margin-top: auto; */
+}
+
+.form1 {
+  border-radius: 10px;
+  background-color: #f8f9faf5;
+  padding: 25px 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 2px solid #ddd;
+  width: 35%;
+  height: auto;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+/* input {
+  height: 65px;
+  margin-top: 20px;
+} */
+.sbtn {
+  /* width: 60%; */
+  background-color: #437ef7;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  margin: auto;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  /* height: 50px; */
+}
+.a {
+  padding: 10px;
+}
+
+/* TextAnimation.css */
+.text-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.animated-text {
+  color: rgb(245, 244, 241);
+  font-size: 60px;
+  font-weight: 500;
+  animation: bounceInOut 1s infinite alternate;
+}
+@media (max-width: 900px) {
+  .animated-text {
+    color: rgb(246, 250, 244);
+    font-size: 30px;
+    animation: bounceInOut 2s infinite alternate;
+  }
+}
+@keyframes bounceInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+
+h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+}
+
+h1 span {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.message {
+  /* background-color: rgb(196, 196, 187); */
+  color: #09a1dd;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 270px;
+  animation: openclose 6s ease-in-out infinite;
+}
+
+/* demo */
+svg {
+  font-family: "Russo One", sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -200px;
+}
+svg text {
+  text-transform: capitalize;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #0c49ac;
+  font-size: 70px;
+  align-items: start;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(7, 172, 184);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgb(226, 222, 16);
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(91, 45, 216, 0.13);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgb(72, 204, 131);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    /* margin: auto; */
+  }
+}
+
+@media (max-width: 600px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    /* margin: auto; */
+  }
+}
+@media (max-width: 768px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    /* margin: auto; */
+  }
+}
+@media screen and (max-width: 900px) {
+  .form1 {
+    border-radius: 10px;
+    background-color: #f8f9fa8a;
+    padding: 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 2px solid #ddd;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+}
